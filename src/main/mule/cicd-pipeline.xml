@@ -12,8 +12,9 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 				<ee:set-payload ><![CDATA[%dw 2.0
 output application/json
 ---
-"Hello Nisanth" ++ " " ++"How are you "]]></ee:set-payload>
+"Hello Nisanth" ++ " " ++"How are you"]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="615072ea-5520-4cd2-9ec8-710c155698ad" message="#[payload]"/>
 	</flow>
 </mule>
