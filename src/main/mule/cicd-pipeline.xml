@@ -12,7 +12,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 				<ee:set-payload ><![CDATA[%dw 2.0
 output application/json
 ---
-"Hello Nisanth"]]></ee:set-payload>
+"Hello Nisanth" ++ " " ++"How are you "]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
 	</flow>
